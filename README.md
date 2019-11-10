@@ -1,5 +1,8 @@
 # focustype 
-tl;dr better looking, intentionally designed focus states for accessible websites
+
+**tl;dr** better looking, intentionally designed focus states for accessible websites
+
+See it in action at [https://ryanberliner.com/focustype/](https://ryanberliner.com/focustype/)
 
 This is focustype. It provides useful data attributes to isolate focus events based on their origins, using long and complicated javascript event handlers (kidding). It's very short and simple.
 
