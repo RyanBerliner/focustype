@@ -6,6 +6,20 @@
     var tabindex = element.tabIndex;
     return tabindex >= 0;
   }
+  var isDescendent = function(parent, descendent) {
+    if (parent == null || descendent == null) {
+      return false;
+    }
+    // https://stackoverflow.com/questions/2234979/how-to-check-in-javascript-if-one-element-is-contained-within-another
+    var node = descendent.parentNode;
+    while (node != null) {
+      if (node == parent) {
+        return true;
+      }
+      node = node.parentNode;
+    }
+    return false; 
+  }
   document.body.className += ' ' + 'focustype-loaded';
   document.addEventListener("mousedown", function(event) {
     clickedel = event.target;
@@ -22,8 +36,7 @@
     clickedel = null;
   });
   document.addEventListener("focusin", function(event) {
-    // We need to check for children here as well...
-    var type = (clickedel === event.target) ? "mouse" : "key";
+    var type = (clickedel === event.target || isDescendent(event.target, clickedel)) ? "mouse" : "key";
     event.target.setAttribute(attribute, type);
     clickedel = null;
     if (prevClickedel !== null) {
