@@ -22,6 +22,7 @@
     clickedel = null;
   });
   document.addEventListener("focusin", function(event) {
+    // We need to check for children here as well...
     var type = (clickedel === event.target) ? "mouse" : "key";
     event.target.setAttribute(attribute, type);
     clickedel = null;
