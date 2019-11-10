@@ -4,17 +4,17 @@ body {
   margin: 0 auto;
 }
 
-#tradition-focus-problem a:focus {
+#tradition-focus-problem *:focus {
   outline: 4px solid red;
   outline-offset: 3px;
 }
 
-#key-only-focus a[data-focustype="key"]:focus {
+#key-only-focus *[data-focustype="key"]:focus {
   outline: 4px solid red;
   outline-offset: 3px;
 }
 
-#mouse-only-focus a[data-focustype="mouse"] {
+#mouse-only-focus *[data-focustype="mouse"] {
   outline: 4px solid red;
   outline-offset: 3px;
 }

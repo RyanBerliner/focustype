@@ -63,6 +63,9 @@
         And here is <a href="#9">another link.</a>
         And here is <a href="#10">another link.</a>
       </p>
+      <div tabindex="0">
+        This is a focusable div.
+      </div>
     </section>
     <section id="key-only-focus">
       <h3>Key Only Focus</h3>
@@ -84,13 +87,16 @@
         And here is <a href="#9">another link.</a>
         And here is <a href="#10">another link.</a>
       </p>
+      <div tabindex="0">
+        This is a focusable div.
+      </div>
     </section>
     <section id="mouse-only-focus">
       <h3>Mouse Only Focus</h3>
       <p>
         You can also do this with mouse only focus. Its important to note though that 
         this selector does not contain the <code>:focus</code> state, so its just 
-        <code>a[data-focustype="mouse"]</code>. This is because some browsers, while 
+        <code>[data-focustype="mouse"]</code>. This is because some browsers, while 
         putting focus on the element you click, don't actually put "focus" on the element.
         So, if we include the <code>:focus</code> state on this selector it wouldn't 
         show up in these browsers.
@@ -108,6 +114,9 @@
         And here is <a href="#9">another link.</a>
         And here is <a href="#10">another link.</a>
       </p>
+      <div tabindex="0">
+        This is a focusable div.
+      </div>
     </section>
     <section id="problems-and-notes">
       <h2>Problems and Notes</h2>
