@@ -135,6 +135,23 @@
     </section>
     <section id="problems-and-notes">
       <h2>Problems and Notes</h2>
+      <h3>Mixins</h3>
+      <p>
+        If you are using scss you may find the following mixins helpful.
+        <pre><code>
+@mixin key-only-focus {
+  &[data-focustype="key"]:focus {
+    @content;
+  }
+}
+
+@mixin mouse-only-focus {
+  &[data-focustype="mouse"] {
+    @content;
+  }
+}
+        </code></pre>
+      </p>
       <h3>What if the client doesn't have javascript enabled?</h3>
       <p>
         Styles should be written such that the usability isn't dependent on javascript.

@@ -11,6 +11,24 @@ Focus states are an important part of letting users know what part of your web p
 
 ## Problems and Notes
 
+### Mixins 
+
+If you are using scss you may find the following mixins helpful.
+
+```
+@mixin key-only-focus {
+  &[data-focustype="key"]:focus {
+    @content;
+  }
+}
+
+@mixin mouse-only-focus {
+  &[data-focustype="mouse"] {
+    @content;
+  }
+}
+```
+
 ### What if the client doesn't have javascript enabled?
 
 Styles should be written such that the usability isn't dependent on javascript. focustype adds a class to the body `focustype-loaded` when it is loaded. You can use this to your advantage.
