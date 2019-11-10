@@ -1,0 +1,20 @@
+body {
+  padding: 20px;
+  max-width: 777px;
+  margin: 0 auto;
+}
+
+#tradition-focus-problem a:focus {
+  outline: 4px solid red;
+  outline-offset: 3px;
+}
+
+#key-only-focus a[data-focustype="key"]:focus {
+  outline: 4px solid red;
+  outline-offset: 3px;
+}
+
+#mouse-only-focus a[data-focustype="mouse"]:focus {
+  outline: 4px solid red;
+  outline-offset: 3px;
+}
