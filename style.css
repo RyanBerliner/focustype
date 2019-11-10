@@ -14,7 +14,7 @@ body {
   outline-offset: 3px;
 }
 
-#mouse-only-focus a[data-focustype="mouse"]:focus {
+#mouse-only-focus a[data-focustype="mouse"] {
   outline: 4px solid red;
   outline-offset: 3px;
 }
