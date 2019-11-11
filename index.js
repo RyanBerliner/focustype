@@ -2,6 +2,9 @@
   var attribute = "data-focustype";
   var clickedel = null;
   var prevClickedel = null;
+  var hitkey = false; // Set to true for 10ms after a key hit. This is enough time 
+                      // for focus to jump.
+  var hitkeytimeout = null;
   var focusable = function(element) {
     var tabindex = element.tabIndex;
     return tabindex >= 0;
@@ -36,7 +39,12 @@
     clickedel = null;
   });
   document.addEventListener("focusin", function(event) {
-    var type = (clickedel === event.target || isDescendent(event.target, clickedel)) ? "mouse" : "key";
+    var type = "unknown";
+    if (clickedel === event.target || isDescendent(event.target, clickedel)) {
+      type = "mouse";
+    } else if (hitkey) {
+      type = "key";
+    }
     event.target.setAttribute(attribute, type);
     clickedel = null;
     if (prevClickedel !== null) {
@@ -46,5 +54,14 @@
   document.addEventListener("focusout", function(event) {
     event.target.removeAttribute(attribute);
     prevClickedel = null;
+  });
+  document.addEventListener("keydown", function(event) {
+    if (hitkeytimeout != null) {
+      clearTimeout(hitkeytimeout);
+    }
+    hitkey = true;
+    hitkeytimeout = setTimeout(function() {
+      hitkey = false;
+    }, 10);
   });
 })();

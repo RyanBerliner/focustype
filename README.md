@@ -30,6 +30,12 @@ If you are using scss you may find the following mixins helpful.
     @content;
   }
 }
+
+@mixin unknown-only-focus {
+  &[data-focustype="unknown"]:focus {
+    @content;
+  }
+}
 ```
 
 ### What if the client doesn't have javascript enabled?

@@ -18,3 +18,9 @@ body {
   outline: 4px solid red;
   outline-offset: 3px;
 }
+
+#unknown-only-focus *[data-focustype="unknown"]:focus {
+  outline: 4px solid red;
+  outline-offset: 3px;
+}
+

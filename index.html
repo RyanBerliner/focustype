@@ -100,8 +100,8 @@
         <div>
           <p>Nested content in a focusable element.</p>
         </div>
-        <a href="#11" class="hover-focus">This will focus programatically on mouseover.</a>
       </div>
+      <a href="#11" class="hover-focus">This will focus programatically on mouseover.</a>
     </section>
     <section id="mouse-only-focus">
       <h3>Mouse Only Focus</h3>
@@ -112,6 +112,35 @@
         putting focus on the element you click, don't actually put "focus" on the element.
         So, if we include the <code>:focus</code> state on this selector it wouldn't 
         show up in these browsers.
+      </p>
+      <p>
+        This is a <a href="#0">link.</a>
+        And here is <a href="#1">another link.</a>
+        And here is <a href="#2">another link.</a>
+        And here is <a href="#3">another link.</a>
+        And here is <a href="#4">another link.</a>
+        And here is <a href="#5">another link.</a>
+        And here is <a href="#6">another link.</a>
+        And here is <a href="#7">another link.</a>
+        And here is <a href="#8">another link.</a>
+        And here is <a href="#9">another link.</a>
+        And here is <a href="#10">another link.</a>
+      </p>
+      <div tabindex="0">
+        This is a focusable div.
+      </div>
+      <div tabindex="0">
+        <div>
+          <p>Nested content in a focusable element.</p>
+        </div>
+      </div>
+      <a href="#11" class="hover-focus">This will focus programatically on mouseover.</a>
+    </section>
+    <section id="unknown-only-focus">
+      <h3>Unknown Only Focus</h3>
+      <p>
+        Focus can also be applied programically. In this case, the last example 
+        link has focus brought to it on hover. This gives the type <code>unknown</code>.
       </p>
       <p>
         This is a <a href="#0">link.</a>
@@ -150,6 +179,12 @@
 
 @mixin mouse-only-focus {
   &[data-focustype="mouse"] {
+    @content;
+  }
+}
+
+@mixin unknown-only-focus {
+  &[data-focustype="unknown"]:focus {
     @content;
   }
 }
