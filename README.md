@@ -10,7 +10,7 @@ Every browser seems to focus elements under different circumstances. Don't belie
 
 ## Why Would You Need This?
 
-Focus states are an important part of letting users know what part of your web page currently has focus. This is the case for almost all users of the web (even if you don't realize it), and even more so for those who navigate the web entirely by keyboard, jumping from element to element. Hopefully, you care about how your websites elements look for all users, and focustype helps you dial in your design under all circumstances. For mouse users, and keyboard users.
+Focus states are an important part of letting users know what part of your web page currently has focus. This is the case for almost all users of the web (even if you don't realize it), and even more so for those who navigate the web entirely by keyboard, jumping from element to element. You likely care about how your websites elements look for all users, and focustype helps you dial in your design under all circumstances. For mouse users, and keyboard users.
 
 ## Problems and Notes
 
