@@ -71,6 +71,7 @@
           <p>Nested content in a focusable element.</p>
         </div>
       </div>
+      <a href="#11" class="hover-focus">This will focus programatically on mouseover.</a>
     </section>
     <section id="key-only-focus">
       <h3>Key Only Focus</h3>
@@ -99,6 +100,7 @@
         <div>
           <p>Nested content in a focusable element.</p>
         </div>
+        <a href="#11" class="hover-focus">This will focus programatically on mouseover.</a>
       </div>
     </section>
     <section id="mouse-only-focus">
@@ -132,6 +134,7 @@
           <p>Nested content in a focusable element.</p>
         </div>
       </div>
+      <a href="#11" class="hover-focus">This will focus programatically on mouseover.</a>
     </section>
     <section id="problems-and-notes">
       <h2>Problems and Notes</h2>
@@ -173,5 +176,13 @@
       </p>
     </section>
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+      var hoverlinks = document.querySelectorAll(".hover-focus");
+      for (var i = 0; i < hoverlinks.length; i++) {
+        hoverlinks[i].addEventListener("mouseover", function(event) {
+          event.target.focus();  
+        });
+      }
+    </script>
   </body>
 </html>
