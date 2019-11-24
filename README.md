@@ -14,6 +14,11 @@ Focus states are an important part of letting users know what part of your web p
 
 ## Problems and Notes
 
+### Isn't this `:focus-visible`?
+
+Kinda. However, the current support for this is not great  [(see support here)](https://caniuse.com/#search=%3Afocus-visible), and you don't get the additional insight about specific focus origins. Once/if `:focus-visible` has better support I can see use cases where focustype is overkill.
+
+
 ### Mixins 
 
 If you are using scss you may find the following mixins helpful.
