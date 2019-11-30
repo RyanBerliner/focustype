@@ -1,26 +1,71 @@
+/* css vars dont have great support... the entire point of 
+focustype is support. don't use them */
+
+/* bg: #f0f1f3 */
+/* color: #2e343e */
+/* headings/bold: #191d25 */
+/* links: #065bef */
+
+
 body {
-  padding: 20px;
+  padding: 0 20px 2rem;
   max-width: 777px;
   margin: 0 auto;
+  background-color: #f0f1f3;
+  color: #2e343e;
+  font-family: 'Lora', serif;
+  line-height: 1.7;
 }
 
-#tradition-focus-problem *:focus {
-  outline: 4px solid red;
-  outline-offset: 3px;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin-bottom: .75rem;
+  margin-top: 2rem;
 }
 
-#key-only-focus *[data-focustype="key"]:focus {
-  outline: 4px solid red;
-  outline-offset: 3px;
+p {
+  margin-top: 0;
 }
 
-#mouse-only-focus *[data-focustype="mouse"] {
-  outline: 4px solid red;
-  outline-offset: 3px;
+h1,h2,h3,h4,h5,h6,b,strong {
+  color: #191d25;
 }
 
+.focustype-brand {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+a {
+  color: #065bef;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #065bef;
+  color: #f0f1f3;
+  font-family: 'Ubuntu', sans-serif;
+  padding: .1em 0.7em;
+  border-radius: 0.2em;
+  font-size: .95em;
+  letter-spacing: 0.05em;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.focus-style,
+#tradition-focus-problem *:focus,
+#key-only-focus *[data-focustype="key"]:focus,
+#mouse-only-focus *[data-focustype="mouse"],
 #unknown-only-focus *[data-focustype="unknown"]:focus {
-  outline: 4px solid red;
-  outline-offset: 3px;
+  outline: 2px solid #065bef45;
+  outline-offset: 0px;
+  background-color: #065bef45;
+  color: #065bef;
 }
 
