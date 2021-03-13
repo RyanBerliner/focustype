@@ -45,7 +45,7 @@ If you are using scss you may find the following mixins helpful.
 
 ### What if the client doesn't have javascript enabled?
 
-Styles should be written such that the usability isn't dependent on javascript. focustype adds a class to the body `focustype-loaded` when it is loaded. You can use this to your advantage.
+Styles should be written such that the usability isn't dependent on javascript. focustype adds a class to the body `focustype-activated` when it is loaded. You can use this to your advantage.
 
 ### Form Inputs
 
