@@ -11,6 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/RyanBerliner/focustype.git"
   },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "focustype.js",
+    "dist/focustype.js"
+  ],
   "keywords": [
     "accessibility",
     "accessible",
