@@ -1,5 +1,5 @@
 /*!
-  * focustype v0.1.0 (https://ryanberliner.com/focustype/)
+  * focustype v0.1.1 (https://ryanberliner.com/focustype/)
   * Copyright 2019 Ryan Berliner
   * Licensed under MIT (https://github.com/RyanBerliner/focustype/blob/master/LICENSE)
   */
