@@ -1,5 +1,11 @@
+/*!
+  * focustype v0.1.0 (https://ryanberliner.com/focustype/)
+  * Copyright 2019 Ryan Berliner
+  * Licensed under MIT (https://github.com/RyanBerliner/focustype/blob/master/LICENSE)
+  */
+
 (function(window, document, undefined) {
-  if (window === undefined || document === undefined);
+  if (window === undefined || document === undefined) return;
 
   var attribute = "data-focustype";
   var bodyClass = "focustype-activated";

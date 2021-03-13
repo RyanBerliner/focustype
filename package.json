@@ -1,0 +1,35 @@
+{
+  "name": "focustype",
+  "version": "0.1.0",
+  "description": "better looking, intentionally designed focus states for accessible websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanBerliner/focustype.git"
+  },
+  "keywords": [
+    "accessibility",
+    "accessible",
+    "web-accessibility",
+    "accessible-design",
+    "design",
+    "scss",
+    "css",
+    "keyboard",
+    "mouse"
+  ],
+  "author": "Ryan Berliner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanBerliner/focustype/issues"
+  },
+  "homepage": "https://github.com/RyanBerliner/focustype#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
