@@ -9,13 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1 class="focustype-brand">focustype</h1>
+    <h1 class="focustype-brand">
+      focustype
+      <img alt="" src="https://img.shields.io/npm/v/focustype"/>
+    </h1>
     <p><strong>tl;dr</strong> better looking, intentionally designed focus states for accessible websites</p>
-    <p><a href="https://github.com/RyanBerliner/focustype" class="button" target="_blank">View on GitHub</a></p>
+    <p><a href="https://github.com/RyanBerliner/focustype" class="button">View on GitHub</a></p>
+    <h2>How to Use</h2>
+    <p>
+      If you are using npm, you can <code>npm i focustype</code>
+    </p>
+    <p>
+      Otherwise, you can use <a href="https://www.jsdelivr.com/package/npm/focustype">jsDelivr</a> to reference the latest version from their CDN.
+      <pre tabindex="0"><code>&lt;script async src=&quot;https://cdn.jsdelivr.net/npm/focustype@0.1.0/dist/focustype.js&quot;&gt;&lt;/script&gt;</code></pre>
+    </p>
+    <h2>Overview</h2>
     <p>
       This is <strong class="focustype-brand">focustype</strong>. 
       It provides useful data attributes to isolate focus events based on their 
-      origins. Check out the <a href="https://github.com/RyanBerliner/focustype" target="_blank">GitHub repository</a> for code. 
+      origins. Check out the <a href="https://github.com/RyanBerliner/focustype">GitHub repository</a> for code. 
     </p>
     <p>
       Every browser seems to focus elements under different circumstances. Don't believe me? 
@@ -179,8 +191,7 @@
       <h3>Mixins</h3>
       <p>
         If you are using scss you may find the following mixins helpful.
-        <pre><code>
-@mixin key-only-focus {
+        <pre tabindex="0"><code>@mixin key-only-focus {
   &[data-focustype="key"]:focus {
     @content;
   }
@@ -196,8 +207,7 @@
   &[data-focustype="unknown"]:focus {
     @content;
   }
-}
-        </code></pre>
+}</code></pre>
       </p>
       <h3>What if the client doesn't have javascript enabled?</h3>
       <p>

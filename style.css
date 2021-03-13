@@ -69,3 +69,16 @@ a {
   color: #065bef;
 }
 
+code,
+pre {
+  background-color: #e7e7e7;
+}
+
+code {
+  padding: 0.2em 0.5em;
+}
+
+pre {
+  overflow: auto;
+  padding: 1em;
+}

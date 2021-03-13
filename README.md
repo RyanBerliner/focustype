@@ -1,8 +1,20 @@
-# focustype 
+# focustype ![focustype](https://img.shields.io/npm/v/focustype)
 
 **tl;dr** better looking, intentionally designed focus states for accessible websites
 
 See it in action at [https://ryanberliner.com/focustype/](https://ryanberliner.com/focustype/)
+
+## How to Use
+
+If you are using npm, you can `npm i focustype`
+
+Otherwise, you can use [jsDelivr](https://www.jsdelivr.com/package/npm/focustype) to reference the latest version from their CDN.
+
+```
+<script async src="https://cdn.jsdelivr.net/npm/focustype@0.1.0/dist/focustype.js"></script>
+```
+
+## Overview
 
 This is focustype. It provides useful data attributes to isolate focus events based on their origins.
 
