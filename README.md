@@ -11,7 +11,7 @@ If you are using npm, you can `npm i focustype`
 Otherwise, you can use [jsDelivr](https://www.jsdelivr.com/package/npm/focustype) to reference the latest version from their CDN.
 
 ```
-<script async src="https://cdn.jsdelivr.net/npm/focustype@0.1.1/dist/focustype.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/focustype@0.1.2/dist/focustype.js"></script>
 ```
 
 ## Overview

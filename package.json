@@ -2,7 +2,7 @@
   "name": "focustype",
   "version": "0.1.1",
   "description": "better looking, intentionally designed focus states for accessible websites",
-  "main": "index.js",
+  "main": "focustype.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp compress"
